@@ -86,7 +86,7 @@ BEGIN
 UPDATEPRICE(11);
 END;
 /
-
+--Using dbms output for printing messages
 BEGIN
  dbms_output.put_line('This is my first program');
 END;
