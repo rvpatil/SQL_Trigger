@@ -1,3 +1,4 @@
+--Creating Products Table
 CREATE TABLE PRODUCTS(PID INT,
                       PNAME VARCHAR(10),
                       PRICE INT,
@@ -11,12 +12,7 @@ INSERT INTO PRODUCTS VALUES(4,'mouse',300,100);
 INSERT INTO PRODUCTS VALUES(5,'mic',3000,10);
  
 SELECT * FROM PRODUCTS;
-SELECT * FROM PRODUCTS;
-SELECT * FROM PRODUCTS;
-DROP TABLE SALES;
-select QTY AS QUANTITY from products;
-delete from products where pid=1;
-
+--Creating Sales Table
 CREATE TABLE SALES(SID INT,
                    PID INT,
                    QTY INT,
@@ -26,7 +22,7 @@ CREATE TABLE SALES(SID INT,
                    ON DELETE SET NULL
                    );
 
-
+DROP TABLE SALES;
 INSERT INTO SALES VALUES(11,1,100,NULL);
 INSERT INTO SALES VALUES(12,2,10,NULL);
 INSERT INTO SALES VALUES(13,1,200,NULL);
